@@ -46,12 +46,12 @@ class AlbumActivity : AppCompatActivity() {
         override fun getView(position: Int, convertView: View?, parent: ViewGroup?): View {
             val album = this.albumList[position]
 
-            var inflator = context!!.getSystemService(Context.LAYOUT_INFLATER_SERVICE) as LayoutInflater
-            var view = inflator.inflate(R.layout.album_entry, null)
+            var inflater = context!!.getSystemService(Context.LAYOUT_INFLATER_SERVICE) as LayoutInflater
+            var view = inflater.inflate(R.layout.album_entry, null)
             view.imgAlbum.setOnClickListener {
                 val intent = Intent(context, AlbumDetails::class.java)
                 intent.putExtra("name", album)
-                intent.putExtra("songList", MainActivity.songsArray)
+                intent.putExtra("songList", MainActivity.allsongsArray)
                 intent.putExtra("position", position)
                 context!!.startActivity(intent)
             }

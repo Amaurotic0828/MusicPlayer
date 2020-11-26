@@ -8,7 +8,7 @@
     android:background="@drawable/emo">
 
     <ListView
-        android:id="@+id/queueList"
+        android:id="@+id/queueListView"
         android:layout_width="408dp"
         android:layout_height="569dp"
         android:layout_marginTop="144dp"

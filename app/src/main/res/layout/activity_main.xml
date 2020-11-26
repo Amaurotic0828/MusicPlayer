@@ -8,7 +8,7 @@
     android:background="@drawable/emo">
 
     <ListView
-        android:id="@+id/songList"
+        android:id="@+id/songListView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         app:layout_constraintStart_toStartOf="parent"
