@@ -8,7 +8,11 @@
         android:title="Album">
     </item>
     <item android:id="@+id/queue"
-        app:showAsAction="ifRoom"
         android:title="PlayList">
+    </item>
+    <item
+        android:id="@+id/add_song"
+        app:showAsAction="ifRoom"
+        android:title="Add Song">
     </item>
 </menu>

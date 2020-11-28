@@ -108,6 +108,10 @@ class MainActivity : AppCompatActivity() {
                 startActivity(Intent(this, AlbumActivity::class.java))
                 true
             }
+            R.id.add_song -> {
+                startActivity(Intent(this, AddSongActivity::class.java))
+                true
+            }
             else -> super.onOptionsItemSelected(item)
         }
     }
